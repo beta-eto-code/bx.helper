@@ -10,6 +10,7 @@ interface JoinRuntimeInterface extends RuntimeInterface
      * @param string|DataManager $entityClass
      * @param string $linkedField
      * @return JoinRuntimeInterface
+     * @psalm-suppress MismatchingDocblockParamType
      */
     public function setTarget(string $entityClass, string $linkedField): JoinRuntimeInterface;
 
